@@ -13,30 +13,37 @@ import org.apache.axis.transport.http.HTTPConstants;
 import sun.misc.BASE64Encoder;
 
 /*
- * 利用axis从DataExchange服务查询数据
+ * DataExchange服务查询数据
  */
-public class Get {
+public class Client {
 
 	private Service service = new Service();
 	private int callTimeout = 3000;
 	private Call call;
 
-	public Get(String dxservice, String username, String password) {
+	public Client(String dxservice, String username, String password) {
 		try {
 			call = (Call) service.createCall();
 			call.setTargetEndpointAddress(dxservice);
 			call.setTimeout(callTimeout);
 			call.setUseSOAPAction(true);
 			call.setProperty(HTTPConstants.REQUEST_HEADERS, encodeAuth(username, password));
-			call.setOperationName(new QName("ns", "get"));
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 	}
 
-	public String[] invoke(String appName, String taskOId, String params) {
+	public void setOperationName(String opName) {
+		call.setOperationName(opName);
+	}
+
+	public void setOperationName(String namespaceURI, String localPart) {
+		call.setOperationName(new QName(namespaceURI, localPart));
+	}
+
+	public String[] invoke(Object[] args) {
 		try {
-			return (String[]) call.invoke(new Object[] { appName, taskOId, params });
+			return (String[]) call.invoke(args);
 		} catch (RemoteException e) {
 			throw new RuntimeException(e);
 		}
