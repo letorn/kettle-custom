@@ -225,5 +225,6 @@
 	<classpathentry kind="lib" path="C:/data-integration/lib/xpp3_min-1.1.4c.jar"/>
 	<classpathentry kind="lib" path="C:/data-integration/lib/xstream-1.4.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/data-integration/plugins/pentaho-mongodb-plugin/lib/mongo-java-driver-2.13.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
