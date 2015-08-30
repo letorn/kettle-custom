@@ -33,6 +33,19 @@ public class Client {
 		}
 	}
 
+	public Client(String dxservice, String username, String password, String operation) {
+		try {
+			call = (Call) service.createCall();
+			call.setTargetEndpointAddress(dxservice);
+			call.setTimeout(callTimeout);
+			call.setUseSOAPAction(true);
+			call.setProperty(HTTPConstants.REQUEST_HEADERS, encodeAuth(username, password));
+			call.setOperationName(new QName("ns", operation));
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+
 	public void setOperationName(String opName) {
 		call.setOperationName(opName);
 	}
@@ -41,9 +54,9 @@ public class Client {
 		call.setOperationName(new QName(namespaceURI, localPart));
 	}
 
-	public String[] invoke(Object[] args) {
+	public String[] execute(Object... params) {
 		try {
-			return (String[]) call.invoke(args);
+			return (String[]) call.invoke(params);
 		} catch (RemoteException e) {
 			throw new RuntimeException(e);
 		}

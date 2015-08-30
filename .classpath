@@ -227,5 +227,6 @@
 	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xmlpull-1.1.3.1.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xpp3_min-1.1.4c.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xstream-1.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/data-integration/libswt/win64/swt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,12 +1,12 @@
 package mongo;
 
 import java.net.UnknownHostException;
-import java.util.List;
 import java.util.Map;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
@@ -32,6 +32,44 @@ public class Client {
 		}
 	}
 
+	public Client(String host, String database) {
+		try {
+			mongoClient = new MongoClient(host);
+			mongoDatabase = mongoClient.getDB(database);
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Client(String host, int port, String database) {
+		try {
+			mongoClient = new MongoClient(host, port);
+			mongoDatabase = mongoClient.getDB(database);
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Client(String host, String database, String collection) {
+		try {
+			mongoClient = new MongoClient(host);
+			mongoDatabase = mongoClient.getDB(database);
+			mongoCollection = mongoDatabase.getCollection(collection);
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Client(String host, int port, String database, String collection) {
+		try {
+			mongoClient = new MongoClient(host, port);
+			mongoDatabase = mongoClient.getDB(database);
+			mongoCollection = mongoDatabase.getCollection(collection);
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public Client database(String database) {
 		mongoDatabase = mongoClient.getDB(database);
 		return this;
@@ -42,16 +80,22 @@ public class Client {
 		return this;
 	}
 
-	public DBObject get(Object id) {
-		return mongoCollection.findOne(id);
+	public String get(Object id) {
+		DBObject dbObject = mongoCollection.findOne(id);
+		return dbObject != null ? dbObject.toString() : null;
 	}
 
-	public DBObject get(Map map) {
-		return mongoCollection.findOne(new BasicDBObject(map));
+	public String get(Map map) {
+		DBObject dbObject = mongoCollection.findOne(new BasicDBObject(map));
+		return dbObject != null ? dbObject.toString() : null;
 	}
 
-	public List<DBObject> find(Map map) {
-		return mongoCollection.find(new BasicDBObject(map)).toArray();
+	public String find() {
+		return encode(mongoCollection.find());
+	}
+
+	public String find(Map map) {
+		return encode(mongoCollection.find(new BasicDBObject(map)));
 	}
 
 	public void insert(Map map) {
@@ -90,6 +134,17 @@ public class Client {
 
 	public void remove(Map map) {
 		mongoCollection.remove(new BasicDBObject(map));
+	}
+
+	private String encode(DBCursor dbCursor) {
+		StringBuffer buffer = new StringBuffer();
+		buffer.append("[");
+		if (dbCursor.hasNext())
+			buffer.append(dbCursor.next().toString());
+		while (dbCursor.hasNext())
+			buffer.append("," + dbCursor.next().toString());
+		buffer.append("]");
+		return buffer.toString();
 	}
 
 }

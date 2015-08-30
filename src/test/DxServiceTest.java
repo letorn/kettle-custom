@@ -2,12 +2,58 @@ package test;
 
 import org.junit.Test;
 
+import dxservice.Client;
+import dxservice.Get;
 import dxservice.Post;
 
-public class PostTest {
+public class DxServiceTest {
 
 	@Test
-	public void demo() {
+	public void testGet() {
+		String url = "http://120.25.163.40:9090/dxservice/svcs/DataService";
+		String username = "admin";
+		String password = "1";
+
+		String appName = "职场导航网络科技有限公司";
+		String taskOId = "hbjyweb_webservice_cb20_xml_task";
+		String params = "<maps>"
+				+ "<map><key><![CDATA[AAB004]]></key><value><![CDATA[%]]></value></map>"
+				+ "<map><key><![CDATA[AAB003]]></key><value><![CDATA[07957472-7]]></value></map>"
+				+ "<map><key><![CDATA[AAE022]]></key><value><![CDATA[%]]></value></map>"
+				+ "<map><key><![CDATA[AAF036_1]]></key><value><![CDATA[20140101]]></value></map>"
+				+ "<map><key><![CDATA[AAF036_2]]></key><value><![CDATA[20151231]]></value></map>"
+			+ "</maps>";
+
+		Get dxGet = new Get(url, username, password);
+		String[] strs = dxGet.invoke(appName, taskOId, params);
+		for (String str : strs)
+			System.out.println(str);
+	}
+
+	@Test
+	public void testGet2() {
+		String url = "http://120.25.163.40:9090/dxservice/svcs/DataService";
+		String username = "admin";
+		String password = "1";
+
+		String appName = "职场导航网络科技有限公司";
+		String taskOId = "hbjyweb_webservice_cb21_xml_task";
+		String params = "<maps>"
+				+ "<map><key><![CDATA[ACB217]]></key><value><![CDATA[%]]></value></map>"
+				+ "<map><key><![CDATA[ACA111]]></key><value><![CDATA[%]]></value></map>"
+				+ "<map><key><![CDATA[AAE022]]></key><value><![CDATA[%]]></value></map>"
+				+ "<map><key><![CDATA[AAF036_1]]></key><value><![CDATA[20140101]]></value></map>"
+				+ "<map><key><![CDATA[AAF036_2]]></key><value><![CDATA[20140201]]></value></map>"
+			+ "</maps>";
+
+		Get dxGet = new Get(url, username, password);
+		String[] strs = dxGet.invoke(appName, taskOId, params);
+		for (String str : strs)
+			System.out.println(str);
+	}
+	
+	@Test
+	public void testPost() {
 		String url = "http://120.25.163.40:9090/dxservice/svcs/DataService";
 		String username = "admin";
 		String password = "1";
@@ -20,6 +66,22 @@ public class PostTest {
 
 		Post dxPost = new Post(url, username, password);
 		String[] strs = dxPost.invoke(appName, taskOId, xmlDataForUpd, params);
+		for (String str : strs)
+			System.out.println(str);
+	}
+
+	@Test
+	public void testClient() {
+		String url = "http://120.25.163.40:9090/dxservice/svcs/DataService";
+		String username = "admin";
+		String password = "1";
+
+		String appName = "职场导航网络科技有限公司";
+		String taskOId = "hbjyweb_webservice_cb20_xml_task";
+		String params = "<maps><map><key><![CDATA[AAB003]]></key><value>07957472-7</value></map><map><key><![CDATA[AAB004]]></key><value>职场导航</value></map><map><key><![CDATA[AAF036_1]]></key><value>19800101</value></map><map><key><![CDATA[AAF036_2]]></key><value>20151231</value></map><map><key><![CDATA[AAE022]]></key><value>%</value></map></maps>";
+
+		Client dxClient = new Client(url, username, password, "get");
+		String[] strs = dxClient.execute(appName, taskOId, params);
 		for (String str : strs)
 			System.out.println(str);
 	}
