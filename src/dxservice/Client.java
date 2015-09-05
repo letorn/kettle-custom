@@ -1,9 +1,12 @@
 package dxservice;
 
 import java.io.UnsupportedEncodingException;
+import java.net.ConnectException;
+import java.net.SocketTimeoutException;
 import java.rmi.RemoteException;
 import java.util.Hashtable;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.xml.namespace.QName;
 
 import org.apache.axis.client.Call;
@@ -18,8 +21,8 @@ import sun.misc.BASE64Encoder;
 public class Client {
 
 	private Service service = new Service();
-	private int callTimeout = 3000;
 	private Call call;
+	private int callTimeout = 30000;
 
 	public Client(String dxservice, String username, String password) {
 		try {
@@ -54,11 +57,31 @@ public class Client {
 		call.setOperationName(new QName(namespaceURI, localPart));
 	}
 
-	public String[] execute(Object... params) {
+	public Object[] execute(Object... params) {
 		try {
-			return (String[]) call.invoke(params);
+			String[] strs = (String[]) call.invoke(params);
+			int statusCode = strs[0] != null && strs[0].matches("\\d") ? Integer.valueOf(strs[0]) : -1;
+			if (statusCode == 0) {
+				return new Object[] { HttpServletResponse.SC_OK, strs[1] };
+			} else {
+				return new Object[] { statusCode, strs[1] };
+			}
 		} catch (RemoteException e) {
-			throw new RuntimeException(e);
+			e.printStackTrace();
+			if (e.getCause() instanceof SocketTimeoutException) {
+				return new Object[] { HttpServletResponse.SC_REQUEST_TIMEOUT, "Request Timeout" };
+			} else if (e.getCause() instanceof ConnectException) {
+				return new Object[] { HttpServletResponse.SC_NOT_FOUND, "Not Found" };
+			} else {
+				String message = e.getMessage() != null ? e.getMessage() : "";
+				if (message.contains("(404)Not Found") || message.contains("could not find a target service")) {
+					return new Object[] { HttpServletResponse.SC_NOT_FOUND, "Not Found" };
+				} else if (message.contains("(503)Service Unavailable")) {
+					return new Object[] { HttpServletResponse.SC_SERVICE_UNAVAILABLE, "Service Unavailable" };
+				} else {
+					return new Object[] { -1, "Unkonwn" };
+				}
+			}
 		}
 	}
 

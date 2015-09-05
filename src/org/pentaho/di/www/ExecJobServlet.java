@@ -2,6 +2,7 @@ package org.pentaho.di.www;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Enumeration;
 import java.util.UUID;
 
 import javax.servlet.ServletException;
@@ -25,23 +26,22 @@ import org.pentaho.di.repository.Repository;
 import org.pentaho.di.repository.RepositoryDirectory;
 import org.pentaho.di.repository.RepositoryDirectoryInterface;
 
-public class HBServlet extends BaseHttpServlet implements CartePluginInterface {
+public class ExecJobServlet extends BaseHttpServlet implements CartePluginInterface {
 
 	private static final long serialVersionUID = 1192413943669836775L;
 
 	private static Class<?> PKG = RunJobServlet.class; // i18n
 
-	public static final String CONTEXT_PATH = "/kettle/hb";
+	public static final String CONTEXT_PATH = "/kettle/execJob";
 
-	public HBServlet() {
+	public ExecJobServlet() {
 	}
 
-	public HBServlet(JobMap jobMap) {
+	public ExecJobServlet(JobMap jobMap) {
 		super(jobMap);
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("-----------------------------------------------------");
 		if (isJettyMode() && !request.getContextPath().startsWith(CONTEXT_PATH)) {
 			return;
 		}
@@ -52,8 +52,10 @@ public class HBServlet extends BaseHttpServlet implements CartePluginInterface {
 
 		// Options taken from PAN
 		//
-		String jobOption = "hb-enterprise-entpost";
-		String levelOption = "debug";
+		String[] knownOptions = new String[] { "job", "level" };
+
+		String jobOption = request.getParameter("job");
+		String levelOption = request.getParameter("level");
 
 		response.setStatus(HttpServletResponse.SC_OK);
 
@@ -68,9 +70,26 @@ public class HBServlet extends BaseHttpServlet implements CartePluginInterface {
 			}
 			final JobMeta jobMeta = loadJob(slaveServerRepository, jobOption);
 
-			// Set the request body as variables in the job
+			// Set the servlet parameters as variables in the job
 			//
-			jobMeta.setParameterValue("orgains", "07957472-7");
+			String[] parameters = jobMeta.listParameters();
+			Enumeration<?> parameterNames = request.getParameterNames();
+			while (parameterNames.hasMoreElements()) {
+				String parameter = (String) parameterNames.nextElement();
+				String[] values = request.getParameterValues(parameter);
+
+				// Ignore the known options. set the rest as variables
+				//
+				if (Const.indexOfString(parameter, knownOptions) < 0) {
+					// If it's a trans parameter, set it, otherwise simply set the variable
+					//
+					if (Const.indexOfString(parameter, parameters) < 0) {
+						jobMeta.setVariable(parameter, values[0]);
+					} else {
+						jobMeta.setParameterValue(parameter, values[0]);
+					}
+				}
+			}
 
 			JobExecutionConfiguration jobExecutionConfiguration = new JobExecutionConfiguration();
 			LogLevel logLevel = LogLevel.getLogLevelForCode(levelOption);
@@ -124,8 +143,17 @@ public class HBServlet extends BaseHttpServlet implements CartePluginInterface {
 			try {
 				job.start();
 				job.waitUntilFinished();
-				// response.sendRedirect("http://www.baidu.com");
-				WebResult webResult = new WebResult(WebResult.STRING_OK, "Job started", carteObjectId);
+				String jobResult = job.getVariable("jobResult");
+				String jobMessage = job.getVariable("jobMessage");
+				if (job.getErrors() <= 0 && (jobResult == null || "".equals(jobResult.trim()) || WebResult.STRING_OK.equalsIgnoreCase(jobResult))) {
+					jobResult = WebResult.STRING_OK;
+					jobMessage = "Job finished";
+				} else {
+					jobResult = WebResult.STRING_ERROR;
+					if (jobMessage == null)
+						jobMessage = "";
+				}
+				WebResult webResult = new WebResult(jobResult, jobMessage, carteObjectId);
 				out.println(webResult.getXML());
 				out.flush();
 			} catch (Exception executionException) {
@@ -161,7 +189,7 @@ public class HBServlet extends BaseHttpServlet implements CartePluginInterface {
 	}
 
 	public String toString() {
-		return "HB Service";
+		return "Exec Job";
 	}
 
 	public String getService() {

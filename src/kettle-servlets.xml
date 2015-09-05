@@ -61,6 +61,6 @@
 
   <!-- My servlet ... -->
   
-  <servlet id="hb"> <description>HB service</description> <classname>org.pentaho.di.www.HBServlet</classname> </servlet>
+  <servlet id="hb"> <description>HB service</description> <classname>org.pentaho.di.www.ExecJobServlet</classname> </servlet>
   
 </servlets>
