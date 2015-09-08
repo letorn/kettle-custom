@@ -17,10 +17,10 @@ import org.dom4j.Node;
 
 public class Carte {
 
-	private static String url = "http://localhost:8088/kettle/execJob";
-	private static String username = "admin";
-	private static String password = "123456";
-	private static int timeout = 30000;
+	private static String url = "http://10.128.10.147:8088/kettle/execJob";
+	private static String username = "zcdhjob";
+	private static String password = "zcdhjob";
+	private static int timeout = 180000;
 
 	private static HttpClient httpClient = new HttpClient();
 	private static GetMethod getMethod = new GetMethod(url);
@@ -36,20 +36,20 @@ public class Carte {
 		return execJob("init", "level", "info");
 	}
 
-	public static JobStatus syncEnterpriseToZCDH(String enterpriseId) {
-		return execJob("hb-enterprise-entpost", "enterpriseId", enterpriseId);
+	public static JobStatus syncEnterpriseAndEntpostFromHBToWHDH(String enterpriseId) {
+		return execJob("hb-whdh-enterprise-entpost", "enterpriseId", enterpriseId);
 	}
 
-	public static JobStatus syncEnterpriseToHB(String enterpriseId) {
-		return execJob("zcdh-enterprise-entpost", "enterpriseId", enterpriseId);
+	public static JobStatus syncEnterpriseAndEntpostFromWHDHToHB(String enterpriseId) {
+		return execJob("whdh-hb-enterprise-entpost", "enterpriseId", enterpriseId);
 	}
 
-	public static JobStatus syncJobhunterToZCDH(String jobhunterId) {
-		return execJob("hb-jobhunter-jobresume", "jobhunterId", jobhunterId);
+	public static JobStatus syncJobhunterAndJobresumeFromHBToWHDH(String jobhunterId) {
+		return execJob("hb-whdh-jobhunter-jobresume", "jobhunterId", jobhunterId);
 	}
 
-	public static JobStatus syncJobhunterToHB(String jobhunterId) {
-		return execJob("zcdh-jobhunter-jobresume", "jobhunterId", jobhunterId);
+	public static JobStatus syncJobhunterAndFromWHDHToHB(String jobhunterId) {
+		return execJob("whdh-hb-jobhunter-jobresume", "jobhunterId", jobhunterId);
 	}
 
 	private static JobStatus execJob(String job, String... keyvals) {

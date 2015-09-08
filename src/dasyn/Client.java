@@ -4,6 +4,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
@@ -17,7 +19,7 @@ public class Client {
 
 	private HttpClient httpClient = new HttpClient();
 	private PostMethod postMethod;
-	private int timeout = 30000;
+	private int timeout = 90000;
 
 	public Client(String url) {
 		postMethod = new PostMethod(url);
@@ -37,7 +39,7 @@ public class Client {
 			postMethod.setQueryString(new NameValuePair[] { new NameValuePair("task", task) });
 			postMethod.setRequestEntity(new StringRequestEntity(str, "application/json;charset=UTF-8", "UTF-8"));
 			httpClient.executeMethod(postMethod);
-			return new Object[] { postMethod.getStatusCode(), postMethod.getResponseBodyAsString() };
+			return new Object[] { postMethod.getStatusCode(), postMethod.getStatusCode() == HttpServletResponse.SC_OK ? postMethod.getResponseBodyAsString() : postMethod.getStatusText() };
 		} catch (Exception e) {
 			e.printStackTrace();
 			return new Object[] { -1, "Unkonwn" };
@@ -49,7 +51,7 @@ public class Client {
 			postMethod.setQueryString(new NameValuePair[] { new NameValuePair("task", task) });
 			postMethod.setRequestEntity(new StringRequestEntity(JSONObject.toJSONString(map), "application/json;charset=UTF-8", "UTF-8"));
 			httpClient.executeMethod(postMethod);
-			return new Object[] { postMethod.getStatusCode(), postMethod.getResponseBodyAsString() };
+			return new Object[] { postMethod.getStatusCode(), postMethod.getStatusCode() == HttpServletResponse.SC_OK ? postMethod.getResponseBodyAsString() : postMethod.getStatusText() };
 		} catch (Exception e) {
 			e.printStackTrace();
 			return new Object[] { -1, "Unkonwn" };
@@ -61,7 +63,7 @@ public class Client {
 			postMethod.setQueryString(new NameValuePair[] { new NameValuePair("task", task) });
 			postMethod.setRequestEntity(new StringRequestEntity(JSONArray.toJSONString(list), "application/json;charset=UTF-8", "UTF-8"));
 			httpClient.executeMethod(postMethod);
-			return new Object[] { postMethod.getStatusCode(), postMethod.getResponseBodyAsString() };
+			return new Object[] { postMethod.getStatusCode(), postMethod.getStatusCode() == HttpServletResponse.SC_OK ? postMethod.getResponseBodyAsString() : postMethod.getStatusText() };
 		} catch (Exception e) {
 			e.printStackTrace();
 			return new Object[] { -1, "Unkonwn" };

@@ -22,7 +22,7 @@ public class Client {
 
 	private Service service = new Service();
 	private Call call;
-	private int callTimeout = 30000;
+	private int callTimeout = 90000;
 
 	public Client(String dxservice, String username, String password) {
 		try {

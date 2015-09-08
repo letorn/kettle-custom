@@ -9,16 +9,22 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
+import com.mongodb.MongoClientOptions;
+import com.mongodb.MongoClientOptions.Builder;
 
 public class Client {
 
+	private Builder builder = MongoClientOptions.builder();
+	private int timeout = 90000;
 	private MongoClient mongoClient;
 	private DB mongoDatabase;
 	private DBCollection mongoCollection;
 
 	public Client(String host) {
 		try {
-			mongoClient = new MongoClient(host);
+			builder.socketTimeout(timeout);
+			builder.connectTimeout(timeout);
+			mongoClient = new MongoClient(host, builder.build());
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
@@ -34,7 +40,9 @@ public class Client {
 
 	public Client(String host, String database) {
 		try {
-			mongoClient = new MongoClient(host);
+			builder.socketTimeout(timeout);
+			builder.connectTimeout(timeout);
+			mongoClient = new MongoClient(host, builder.build());
 			mongoDatabase = mongoClient.getDB(database);
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
@@ -52,7 +60,9 @@ public class Client {
 
 	public Client(String host, String database, String collection) {
 		try {
-			mongoClient = new MongoClient(host);
+			builder.socketTimeout(timeout);
+			builder.connectTimeout(timeout);
+			mongoClient = new MongoClient(host, builder.build());
 			mongoDatabase = mongoClient.getDB(database);
 			mongoCollection = mongoDatabase.getCollection(collection);
 		} catch (UnknownHostException e) {
@@ -134,6 +144,10 @@ public class Client {
 
 	public void remove(Map map) {
 		mongoCollection.remove(new BasicDBObject(map));
+	}
+
+	public void close() {
+		mongoClient.close();
 	}
 
 	private String encode(DBCursor dbCursor) {

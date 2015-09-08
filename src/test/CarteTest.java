@@ -21,9 +21,9 @@ public class CarteTest {
 	}
 
 	@Test
-	public void testSyncEnterpriseToZCDH() {
-		String enterpriseId = "";
-		JobStatus jobStatus = Carte.syncEnterpriseToZCDH(enterpriseId);
+	public void testSyncEnterpriseAndEntpostFromHBToWHDH() {
+		String enterpriseId = "0B8DE458DF0110B0E050800A8C0A34B3";
+		JobStatus jobStatus = Carte.syncEnterpriseAndEntpostFromHBToWHDH(enterpriseId);
 		System.out.println("statusCode: " + jobStatus.getStatusCode());
 		System.out.println("finished: " + jobStatus.isFinished());
 		System.out.println("hasError: " + jobStatus.hasError());
@@ -32,15 +32,15 @@ public class CarteTest {
 
 	@Test
 	public void createLink() {
-		String link = "http://192.168.48.84:8080/ent/account/loginForHBJYJ/";// 最好是可配置的
+		String link = "http://10.128.10.147:8080/ent/account/loginForHBJYJ/";// 最好是可配置的
 
-		String username = "myadmin";// 我们提供
-		String password = "my123456";// 我们提供
-		String dataKey = "751030120"; // 企业的主键
+		String username = "whdh";// 我们提供
+		String password = "whdh";// 我们提供
+		String dataKey = "0B8DE458DF0110B0E050800A8C0A34B3"; // 企业的主键
 
 		String keys = encodeKeys(username, password, dataKey);
 		link = link + keys;// 用于跳转到我们系统的链接
-		System.out.println(link);// http://192.168.48.84:8080/ent/account/loginForHBJYJ/bXlhZG1pbjpteTEyMzQ1Njo3NTEwMzAxMjA=
+		System.out.println(link);// http://10.128.10.147:8080/ent/account/loginForHBJYJ/d2hkaDp3aGRoOjBCOERFNDU4REYwMTEwQjBFMDUwODAwQThDMEEzNEIz
 	}
 
 	private static String encodeKeys(String username, String password, String dataKey) {
