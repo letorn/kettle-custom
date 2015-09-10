@@ -11,15 +11,15 @@ public class MyTest {
 
 	@Test
 	public void createLink() {
-		String link = "http://10.128.10.147/ent/account/loginForHBJYJ/";// 最好是可配置的
+		String link = "http://10.128.10.147:9091/ent/account/loginForHBJYJ/";// 最好是可配置的
 
 		String username = "hb";// 我们提供
 		String password = "hb";// 我们提供
-		String dataKey = "E5AF7B1AB654C27AE040800A9A083FA2"; // 企业的主键
+		String dataKey = "0B8DE45410E8E696E050800A8C0A34AB"; // 企业的主键
 
 		String keys = encodeKeys(username, password, dataKey);
 		link = link + keys;// 用于跳转到我们系统的链接
-		System.out.println(link);// http://10.128.10.147/ent/account/loginForHBJYJ/aGI6aGI6RTVBRjdCMUFCNjU0QzI3QUUwNDA4MDBBOUEwODNGQTI=
+		System.out.println(link);// http://10.128.10.147:9091/ent/account/loginForHBJYJ/aGI6aGI6MEI4REU0NTQxMEU4RTY5NkUwNTA4MDBBOEMwQTM0QUI=
 	}
 
 	private static String encodeKeys(String username, String password, String dataKey) {
