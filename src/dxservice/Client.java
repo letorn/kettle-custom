@@ -62,7 +62,7 @@ public class Client {
 			String[] strs = (String[]) call.invoke(params);
 			int statusCode = strs[0] != null && strs[0].matches("\\d") ? Integer.valueOf(strs[0]) : -1;
 			if (statusCode == 0) {
-				return new Object[] { HttpServletResponse.SC_OK, strs[1] };
+				return new Object[] { HttpServletResponse.SC_OK, strs.length > 1 ? strs[1] : "" };
 			} else {
 				return new Object[] { statusCode, strs[1] };
 			}

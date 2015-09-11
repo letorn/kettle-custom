@@ -34,10 +34,11 @@ public class DaSynTest {
 
 	@Test
 	public void testGetJobhunter() throws Exception {
-		String url = "http://192.168.49.34:8080/dasyn/service";
+		String url = "http://192.168.49.34:8081/dasyn/service";
 		Map<String, Object> params = new HashMap<String, Object>();
-		params.put("beginTime", "2015-01-01 00:00:00.0 +0800");
-		params.put("endTime", "2015-3-31 00:00:00.0 +0800");
+		params.put("jobhunterId", 1);
+		// params.put("beginTime", "2015-01-01 00:00:00.0 +0800");
+		// params.put("endTime", "2015-3-31 00:00:00.0 +0800");
 		Object[] responses = new Client(url).execute("getJobhunter", params);
 		for (Object response : responses)
 			System.out.println(response);
