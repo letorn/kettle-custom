@@ -26,18 +26,20 @@ import org.pentaho.di.repository.Repository;
 import org.pentaho.di.repository.RepositoryDirectory;
 import org.pentaho.di.repository.RepositoryDirectoryInterface;
 
-public class GetDataServlet extends BaseHttpServlet implements CartePluginInterface {
+import util.File;
+
+public class GetJobDataServlet extends BaseHttpServlet implements CartePluginInterface {
 
 	private static final long serialVersionUID = 1192413943669836775L;
 
 	private static Class<?> PKG = RunJobServlet.class; // i18n
 
-	public static final String CONTEXT_PATH = "/kettle/data";
+	public static final String CONTEXT_PATH = "/kettle/jobData";
 
-	public GetDataServlet() {
+	public GetJobDataServlet() {
 	}
 
-	public GetDataServlet(JobMap jobMap) {
+	public GetJobDataServlet(JobMap jobMap) {
 		super(jobMap);
 	}
 
@@ -143,26 +145,19 @@ public class GetDataServlet extends BaseHttpServlet implements CartePluginInterf
 			try {
 				job.start();
 				job.waitUntilFinished();
-				String jobResult = job.getVariable("jobResult");
-				String jobMessage = job.getVariable("jobMessage");
-				if (job.getErrors() <= 0 && (jobResult == null || "".equals(jobResult.trim()) || WebResult.STRING_OK.equalsIgnoreCase(jobResult))) {
-					jobResult = WebResult.STRING_OK;
-					jobMessage = "Job finished";
-				} else {
-					jobResult = WebResult.STRING_ERROR;
-					if (jobMessage == null)
-						jobMessage = "";
-				}
-				WebResult webResult = new WebResult(jobResult, jobMessage, carteObjectId);
-				out.println(webResult.getXML());
-				out.flush();
+				String jobData = job.getVariable("jobData");
+				if (jobData == null) jobData = "";
+				String logText = KettleLogStore.getAppender().getBuffer(job.getLogChannelId(), false).toString();
+				out.print(job.getErrors() <= 0 ? jobData : logText);
 			} catch (Exception executionException) {
-				String logging = KettleLogStore.getAppender().getBuffer(job.getLogChannelId(), false).toString();
-				throw new KettleException("Error executing Job: " + logging, executionException);
+				response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+				out.print(KettleLogStore.getAppender().getBuffer(job.getLogChannelId(), false).toString());
 			}
 		} catch (Exception ex) {
-			out.println(new WebResult(WebResult.STRING_ERROR, BaseMessages.getString(PKG, "RunJobServlet.Error.UnexpectedError", Const.CR + Const.getStackTracker(ex))));
+			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+			out.print(BaseMessages.getString(PKG, "RunJobServlet.Error.UnexpectedError", Const.CR + Const.getStackTracker(ex)));
 		}
+		out.flush();
 	}
 
 	private JobMeta loadJob(Repository repository, String job) throws KettleException {
@@ -189,7 +184,7 @@ public class GetDataServlet extends BaseHttpServlet implements CartePluginInterf
 	}
 
 	public String toString() {
-		return "Get Data";
+		return "Get Job Data";
 	}
 
 	public String getService() {

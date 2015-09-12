@@ -61,6 +61,7 @@
 
   <!-- My servlet ... -->
   
-  <servlet id="hb"> <description>HB service</description> <classname>org.pentaho.di.www.ExecJobServlet</classname> </servlet>
+  <servlet id="execJob"> <description>Exec (wait until finished) a job directly from a repository</description> <classname>org.pentaho.di.www.ExecJobServlet</classname> </servlet>
+  <servlet id="jobData"> <description>Get (wait until finished) the data of a job</description> <classname>org.pentaho.di.www.GetJobDataServlet</classname> </servlet>
   
 </servlets>
