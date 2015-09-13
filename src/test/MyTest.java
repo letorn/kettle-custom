@@ -9,10 +9,14 @@ import sun.misc.BASE64Encoder;
 
 public class MyTest {
 
+	public static void main(String[] args) {
+		String[] strs = decodeKeys("aGI6aGI6MEI4REU0MjA5MzQyQUY0MUUwNTA4MDBBOEMwQTM0NUQ=");
+		System.out.println(strs[2]);
+	}
+
 	@Test
 	public void createLink() {
 		String link = "http://10.128.10.147:9091/ent/account/loginForHBJYJ/";// 最好是可配置的
-
 		String username = "hb";// 我们提供
 		String password = "hb";// 我们提供
 		String dataKey = "0B8DE45410E8E696E050800A8C0A34AB"; // 企业的主键
