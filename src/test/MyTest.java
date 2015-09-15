@@ -1,6 +1,7 @@
 package test;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ public class MyTest {
 
 	public static void main(String[] args) {
 		String[] strs = decodeKeys("aGI6aGI6MEI4REU0MjA5MzQyQUY0MUUwNTA4MDBBOEMwQTM0NUQ=");
-		System.out.println(strs[2]);
+		System.out.println(Arrays.toString(strs));
 	}
 
 	@Test

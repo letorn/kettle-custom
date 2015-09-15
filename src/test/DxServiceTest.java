@@ -21,6 +21,7 @@ public class DxServiceTest {
 
 		Client client = new Client(url, username, password, "get");
 		Object[] resps = client.execute(appName, taskOId, params);
+
 		for (Object resp : resps)
 			System.out.println(resp);
 	}
@@ -33,7 +34,33 @@ public class DxServiceTest {
 
 		Client client = new Client(url, username, password, "get");
 		Object[] resps = client.execute(appName, taskOId, params);
-		System.out.println();
+
+		for (Object resp : resps)
+			System.out.println(resp);
+	}
+
+	@Test
+	public void testGetJobhunter() {
+		String appName = "职场导航网络科技有限公司";
+		String taskOId = "hbjyweb_webservice_cc20_xml_task";
+		String params = File.read(filename("/test/dxservice/get-jobhunter.xml")).replaceAll(">\\s+<", "><");
+
+		Client client = new Client(url, username, password, "get");
+		Object[] resps = client.execute(appName, taskOId, params);
+
+		for (Object resp : resps)
+			System.out.println(resp);
+	}
+
+	@Test
+	public void testGetJobresume() {
+		String appName = "职场导航网络科技有限公司";
+		String taskOId = "hbjyweb_webservice_cc21_xml_task";
+		String params = File.read(filename("/test/dxservice/get-jobresume.xml")).replaceAll(">\\s+<", "><");
+
+		Client client = new Client(url, username, password, "get");
+		Object[] resps = client.execute(appName, taskOId, params);
+
 		for (Object resp : resps)
 			System.out.println(resp);
 	}
@@ -46,6 +73,7 @@ public class DxServiceTest {
 
 		Client client = new Client(url, username, password, "post");
 		Object[] resps = client.execute(appName, taskOId, xmlData);
+
 		for (Object resp : resps)
 			System.out.println(resp);
 	}
@@ -55,8 +83,10 @@ public class DxServiceTest {
 		String appName = "职场导航网络科技有限公司";
 		String taskOId = "hbjyweb_webservice_xml_cc20_task";
 		String xmlData = File.read(filename("/test/dxservice/post-jobhunter.xml")).replaceAll(">\\s+<", "><");
+
 		Client client = new Client(url, username, password, "post");
 		Object[] resps = client.execute(appName, taskOId, xmlData);
+
 		for (Object resp : resps)
 			System.out.println(resp);
 	}
