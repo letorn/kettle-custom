@@ -17,7 +17,7 @@ import org.dom4j.Node;
 
 public class Carte {
 
-	private static String url = "http://10.128.10.147:8088/kettle/execJob";
+	private static String url = "http://localhost:8088/kettle/execJob";
 	private static String username = "zcdhjob";
 	private static String password = "zcdhjob";
 	private static int timeout = 180000;
@@ -32,7 +32,16 @@ public class Carte {
 		httpClient.getHttpConnectionManager().getParams().setSoTimeout(timeout);
 	}
 
-	public static JobStatus init() {
+	public static void set(String url, String username, String password, int timeout) {
+		getMethod = new GetMethod(url);
+		credentials = new UsernamePasswordCredentials(username, password);
+
+		httpClient.getState().setCredentials(AuthScope.ANY, credentials);
+		httpClient.getHttpConnectionManager().getParams().setConnectionTimeout(timeout);
+		httpClient.getHttpConnectionManager().getParams().setSoTimeout(timeout);
+	}
+
+	public static JobStatus initSync() {
 		return execJob("init", "level", "info");
 	}
 
@@ -48,7 +57,7 @@ public class Carte {
 		return execJob("hb-whdh-jobhunter-jobresume", "jobhunterId", jobhunterId);
 	}
 
-	public static JobStatus syncJobhunterAndFromWHDHToHB(String jobhunterId) {
+	public static JobStatus syncJobhunterAndJobresumeFromWHDHToHB(String jobhunterId) {
 		return execJob("whdh-hb-jobhunter-jobresume", "jobhunterId", jobhunterId);
 	}
 

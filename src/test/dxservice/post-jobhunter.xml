@@ -1,49 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rows>
   <row>
-    <LKEY><![CDATA[1]]></LKEY>
-    <AAC002><![CDATA[442000199201217340]]></AAC002>
-    <AAC003><![CDATA[陈淑媚]]></AAC003>
-    <AAC004><![CDATA[1]]></AAC004>
+    <ACC200 />
+    <AAC002><![CDATA[420684199202236521]]></AAC002>
+    <AAC003><![CDATA[罗玉琪]]></AAC003>
+    <AAC004><![CDATA[2]]></AAC004>
     <AAC005><![CDATA[01]]></AAC005>
-    <AAC006><![CDATA[1992-02-01]]></AAC006>
-    <AAE005><![CDATA[13800138000]]></AAE005>
-    <BAE017><![CDATA[13242215010]]></BAE017>
-    <AAE159><![CDATA[1234567@qq.com]]></AAE159>
-    <AAE393><![CDATA[1234567]]></AAE393>
-    <AAE007><![CDATA[123456]]></AAE007>
-    <AAE006><![CDATA[珠海市]]></AAE006>
+    <AAC006><![CDATA[1992-02-23]]></AAC006>
+    <AAE005><![CDATA[15071573644]]></AAE005>
+    <BAE017><![CDATA[15071573644]]></BAE017>
+    <AAE159><![CDATA[1448081783@qq.com]]></AAE159>
+    <AAE393><![CDATA[1448081783]]></AAE393>
     <AAB301><![CDATA[440400000000]]></AAB301>
-    <AAC010><![CDATA[珠海市]]></AAC010>
-    <AAC009><![CDATA[11]]></AAC009>
-    <AAC011><![CDATA[21]]></AAC011>
-    <AAC024><![CDATA[13]]></AAC024>
-    <AAC017><![CDATA[1]]></AAC017>
-    <AAC033><![CDATA[1]]></AAC033>
-    <AAC014><![CDATA[1]]></AAC014>
-    <AAC015><![CDATA[1]]></AAC015>
-    <ACC02I><![CDATA[111111]]></ACC02I>
-    <BAC006>25</BAC006>
-    <AAC032><![CDATA[O]]></AAC032>
-    <ACC20S><![CDATA[没有]]></ACC20S>
-    <AAC034>175</AAC034>
-    <AAC035>65</AAC035>
-    <AAC036><![CDATA[良好]]></AAC036>
-    <BCC039><![CDATA[cet4]]></BCC039>
-    <AAC043><![CDATA[高级]]></AAC043>
-    <ACC20D><![CDATA[好]]></ACC20D>
-    <ACB228><![CDATA[1]]></ACB228>
-    <ACB202><![CDATA[440400000000]]></ACB202>
-    <BCB202><![CDATA[珠海市]]></BCB202>
-    <BCC20X><![CDATA[良好]]></BCC20X>
-    <AAC044><![CDATA[121]]></AAC044>
-    <AAC045><![CDATA[北理工]]></AAC045>
-    <AAC046>2013-06-25</AAC046>
-    <ACC01G><![CDATA[计算机]]></ACC01G>
-    <AAC038><![CDATA[1]]></AAC038>
-    <AAC039><![CDATA[好]]></AAC039>
-    <ACC217><![CDATA[3]]></ACC217>
-    <AAC007>2011-09-01</AAC007>
+    <AAC010><![CDATA[襄阳市]]></AAC010>
+    <AAC009><![CDATA[20]]></AAC009>
+    <AAE036><![CDATA[2015-08-12]]></AAE036>
+    <AAE019><![CDATA[王帆]]></AAE019>
+    <AAE020><![CDATA[湖北省人力资源和社会保障厅]]></AAE020>
+    <AAE022><![CDATA[420000000000]]></AAE022>
+    <AAE024><![CDATA[湖北省]]></AAE024>
     <ACC20V><![CDATA[mywechat]]></ACC20V>
+    <ACC01Y><![CDATA[2021300]]></ACC01Y>
+    <ACE750><![CDATA[1]]></ACE750>
+    <LKEY><![CDATA[zcdh_jobhunter_test_01]]></LKEY>
+    <CGBZ />
+    <COMM />
+    <SYS_DATE><![CDATA[2015-08-12]]></SYS_DATE>
+    <WEBID><![CDATA[zcdh_jobhunter_test_01]]></WEBID>
+    <AAE011><![CDATA[ff808081426fa2e30142730f400b003a]]></AAE011>
+    <AAE017><![CDATA[04]]></AAE017>
+    <AAB302><![CDATA[珠海市]]></AAB302>
   </row>
 </rows>
