@@ -3,228 +3,229 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_79"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/ant-1.7.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/ant-launcher-1.7.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/antlr-2.7.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/antlr-3.4-complete.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/ascsapjco3wrp-20100529.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/asm-3.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/avalon-framework-4.1.5.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/axis-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/axis2-adb-1.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/axis2-kernel-1.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/axis-saaj-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/barbecue-1.5-beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/barcode4j-2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-anim-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-awt-util-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-bridge-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-codec-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-css-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-dom-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-ext-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-gui-util-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-gvt-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-parser-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-script-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-svg-dom-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-transcoder-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-util-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/batik-xml-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/bcmail-jdk14-138.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/bcprov-jdk14-138.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/bsf-2.4.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/bsh-1.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/cglib-nodep-2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commands-3.3.0-I20070605-0010.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/common-3.3.0-v20070426.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-beanutils-1.8.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-beanutils-core-1.8.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-codec-1.5.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-collections-3.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-compress-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-dbcp-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-digester-1.8.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-discovery-0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-httpclient-3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-io-2.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-lang-2.6.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-lang3-3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-math-1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-net-1.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-pool-1.5.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-validator-1.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/commons-vfs-20100924-pentaho.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/core-3.4.2.v_883_R34x.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/derby-10.2.1.6.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/derbyclient-10.2.1.6.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/drools-api-5.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/drools-compiler-5.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/drools-core-5.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/edtftpj-2.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/ehcache-core-2.5.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/eigenbase-properties-1.1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/eigenbase-resgen-1.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/eigenbase-xom-1.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/elasticsearch-0.16.3.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/esapi-2.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/feed4j-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/flute-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/ftp4che-0.7.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/georss-rome-0.9.8.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/groovy-1.8.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/guava-17.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/h2-1.2.131.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/hibernate-c3p0-3.6.9.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/hibernate-commons-annotations-3.2.0.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/hibernate-core-3.6.9.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/hibernate-ehcache-3.6.9.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/hsqldb-1.8.0.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/infobright-core-3.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/ini4j-0.5.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/itext-2.1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/itext-rtf-2.1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jackcess-1.2.6.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jackson-core-asl-1.9.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jackson-jaxrs-1.9.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jackson-mapper-asl-1.9.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/janino-2.5.16.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/javacc-5.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/javacup-10k.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/javadbf-20081125.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/javassist-3.12.1.GA.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jaxen-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jaxrpc-api-1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jaybird-2.1.6.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jcifs-1.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jcommon-1.0.16.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jersey-apache-client-1.16.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jersey-bundle-1.16.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jersey-client-1.16.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jersey-core-1.16.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jetty-6.1.21.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jetty-plus-6.1.21.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jetty-util-6.1.21.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jface-3.3.0-I20070606-0010.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jfreechart-1.0.13.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jlfgr-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jmi-200507110943.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jmiutils-200507110943.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/joda-time-1.6.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/js-1.7R3.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jsch-0.1.46.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jsendnsca-2.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jsonpath-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/json-simple-1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jsp-api-2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jt400-6.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jtds-1.2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jug-lgpl-2.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/jxl-2.6.12.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/kettle5-log4j-plugin-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/kettle-core-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/kettle-dbdialog-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/kettle-engine-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/kettle-ui-swt-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/ldapjdk-20000524.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libbase-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libdocbundle-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libfonts-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libformat-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libformula-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libloader-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libpixie-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/librepository-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libserializer-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libsparkline-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libswing-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/libxml-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/LucidDbClient-minimal-0.9.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/mail-1.4.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/mdrapi-200507110943.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/metastore-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/mof-200507110943.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/mondrian-3.10.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/monetdb-jdbc-2.8.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/mongo-java-driver-2.13.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/mstor-0.9.13.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/mvel2-2.0.10.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/mysql-connector-java-5.1.34.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/nbmdr-200507110943-custom.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/nekohtml-1.9.15.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/odfdom-java-0.8.6.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/ognl-2.6.9.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/olap4j-1.2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/olap4j-xmla-1.2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/openide-util-200507110943.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/oro-2.0.8.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-connections-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-cwm-1.5.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-database-model-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-hadoop-hive-jdbc-shim-54.2015.06.01.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-metadata-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-registry-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-core-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-drill-down-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-kettle-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-mondrian-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-olap4j-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-pmd-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-reportdesigner-parser-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-sampledata-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-scripting-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-toc-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-classic-extensions-xpath-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-legacy-charts-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-legacy-functions-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-reporting-engine-wizard-core-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-vfs-browser-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-xul-core-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-xul-swing-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/pentaho-xul-swt-5.4.0.1-130.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/poi-3.9.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/poi-ooxml-3.9.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/poi-ooxml-schemas-3.9.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/postgresql-9.3-1102-jdbc4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/rome-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/rsyntaxtextarea-1.3.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/sac-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/salesforce-partner-24.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/sapdbc-7.4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/SassyReader-0.5.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/saxon-9.1.0.8.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/saxon-dom-9.1.0.8.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/scannotation-1.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/secondstring-20060615.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/servlet-api-2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/simple-jndi-1.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/slf4j-api-1.7.5.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/slf4j-log4j12-1.7.5.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/snakeyaml-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/snappy-java-1.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/snmp4j-1.9.3d.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/spring-2.5.6.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/spring-core-2.5.6.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/sqlite-jdbc-3.7.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/stax-1.2.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/stax-api-1.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/syslog4j-0.9.34.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/trilead-ssh2-build213.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/validation-api-1.0.0.GA.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/wsdl4j-1.6.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/wsdl4j-qname-1.6.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/wstx-asl-3.2.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xalan-2.6.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xercesImpl-2.9.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xml-apis-2.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xml-apis-ext-1.3.04.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xmlbeans-2.5.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xmlpull-1.1.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xpp3_min-1.1.4c.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/data-integration/lib/xstream-1.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/ant-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/ant-launcher-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="lib/antlr-3.4-complete.jar"/>
+	<classpathentry kind="lib" path="lib/ascsapjco3wrp-20100529.jar"/>
+	<classpathentry kind="lib" path="lib/asm-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/avalon-framework-4.1.5.jar"/>
+	<classpathentry kind="lib" path="lib/axis-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/axis-saaj-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/axis2-adb-1.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/axis2-kernel-1.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/barbecue-1.5-beta1.jar"/>
+	<classpathentry kind="lib" path="lib/barcode4j-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/batik-anim-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-awt-util-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-bridge-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-codec-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-css-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-dom-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-ext-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-gui-util-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-gvt-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-parser-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-script-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-svg-dom-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-transcoder-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-util-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/batik-xml-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/bcmail-jdk14-138.jar"/>
+	<classpathentry kind="lib" path="lib/bcprov-jdk14-138.jar"/>
+	<classpathentry kind="lib" path="lib/bsf-2.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/cglib-nodep-2.2.jar"/>
+	<classpathentry kind="lib" path="lib/commands-3.3.0-I20070605-0010.jar"/>
+	<classpathentry kind="lib" path="lib/common-3.3.0-v20070426.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-core-1.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-compress-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-digester-1.8.jar"/>
+	<classpathentry kind="lib" path="lib/commons-discovery-0.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-math-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-net-1.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool-1.5.7.jar"/>
+	<classpathentry kind="lib" path="lib/commons-validator-1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-vfs-20100924-pentaho.jar"/>
+	<classpathentry kind="lib" path="lib/core-3.4.2.v_883_R34x.jar"/>
+	<classpathentry kind="lib" path="lib/derby-10.2.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/derbyclient-10.2.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/drools-api-5.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/drools-compiler-5.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/drools-core-5.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/edtftpj-2.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/ehcache-core-2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/eigenbase-properties-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/eigenbase-resgen-1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/eigenbase-xom-1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/elasticsearch-0.16.3.jar"/>
+	<classpathentry kind="lib" path="lib/esapi-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/feed4j-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/flute-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/ftp4che-0.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/georss-rome-0.9.8.jar"/>
+	<classpathentry kind="lib" path="lib/groovy-1.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/guava-17.0.jar"/>
+	<classpathentry kind="lib" path="lib/h2-1.2.131.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-c3p0-3.6.9.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-commons-annotations-3.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-core-3.6.9.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-ehcache-3.6.9.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hsqldb-1.8.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/infobright-core-3.4.jar"/>
+	<classpathentry kind="lib" path="lib/ini4j-0.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/itext-2.1.7.jar"/>
+	<classpathentry kind="lib" path="lib/itext-rtf-2.1.7.jar"/>
+	<classpathentry kind="lib" path="lib/jackcess-1.2.6.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-jaxrs-1.9.2.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="lib/janino-2.5.16.jar"/>
+	<classpathentry kind="lib" path="lib/javacc-5.0.jar"/>
+	<classpathentry kind="lib" path="lib/javacup-10k.jar"/>
+	<classpathentry kind="lib" path="lib/javadbf-20081125.jar"/>
+	<classpathentry kind="lib" path="lib/javassist-3.12.1.GA.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jaxrpc-api-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jaybird-2.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/jcifs-1.3.3.jar"/>
+	<classpathentry kind="lib" path="lib/jcommon-1.0.16.jar"/>
+	<classpathentry kind="lib" path="lib/jersey-apache-client-1.16.jar"/>
+	<classpathentry kind="lib" path="lib/jersey-bundle-1.16.jar"/>
+	<classpathentry kind="lib" path="lib/jersey-client-1.16.jar"/>
+	<classpathentry kind="lib" path="lib/jersey-core-1.16.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-6.1.21.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-plus-6.1.21.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-util-6.1.21.jar"/>
+	<classpathentry kind="lib" path="lib/jface-3.3.0-I20070606-0010.jar"/>
+	<classpathentry kind="lib" path="lib/jfreechart-1.0.13.jar"/>
+	<classpathentry kind="lib" path="lib/jlfgr-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jmi-200507110943.jar"/>
+	<classpathentry kind="lib" path="lib/jmiutils-200507110943.jar"/>
+	<classpathentry kind="lib" path="lib/joda-time-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/js-1.7R3.jar"/>
+	<classpathentry kind="lib" path="lib/jsch-0.1.46.jar"/>
+	<classpathentry kind="lib" path="lib/jsendnsca-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jsonpath-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jsp-api-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/jt400-6.1.jar"/>
+	<classpathentry kind="lib" path="lib/jtds-1.2.5.jar"/>
+	<classpathentry kind="lib" path="lib/jug-lgpl-2.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/jxl-2.6.12.jar"/>
+	<classpathentry kind="lib" path="lib/kettle-core-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/kettle-custom.jar"/>
+	<classpathentry kind="lib" path="lib/kettle-dbdialog-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/kettle-engine-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/kettle-ui-swt-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/kettle5-log4j-plugin-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/ldapjdk-20000524.jar"/>
+	<classpathentry kind="lib" path="lib/libbase-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libdocbundle-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libfonts-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libformat-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libformula-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libloader-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libpixie-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/librepository-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libserializer-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libsparkline-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libswing-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/libxml-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/LucidDbClient-minimal-0.9.4.jar"/>
+	<classpathentry kind="lib" path="lib/mail-1.4.7.jar"/>
+	<classpathentry kind="lib" path="lib/mdrapi-200507110943.jar"/>
+	<classpathentry kind="lib" path="lib/metastore-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/mof-200507110943.jar"/>
+	<classpathentry kind="lib" path="lib/mondrian-3.10.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/monetdb-jdbc-2.8.jar"/>
+	<classpathentry kind="lib" path="lib/mongo-java-driver-2.13.0.jar"/>
+	<classpathentry kind="lib" path="lib/mstor-0.9.13.jar"/>
+	<classpathentry kind="lib" path="lib/mvel2-2.0.10.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.34.jar"/>
+	<classpathentry kind="lib" path="lib/nbmdr-200507110943-custom.jar"/>
+	<classpathentry kind="lib" path="lib/nekohtml-1.9.15.jar"/>
+	<classpathentry kind="lib" path="lib/odfdom-java-0.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/ognl-2.6.9.jar"/>
+	<classpathentry kind="lib" path="lib/olap4j-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/olap4j-xmla-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/openide-util-200507110943.jar"/>
+	<classpathentry kind="lib" path="lib/oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-connections-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-cwm-1.5.4.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-database-model-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-hadoop-hive-jdbc-shim-54.2015.06.01.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-metadata-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-registry-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-core-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-drill-down-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-kettle-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-mondrian-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-olap4j-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-pmd-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-reportdesigner-parser-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-sampledata-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-scripting-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-toc-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-classic-extensions-xpath-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-legacy-charts-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-legacy-functions-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-reporting-engine-wizard-core-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-vfs-browser-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-xul-core-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-xul-swing-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/pentaho-xul-swt-5.4.0.1-130.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="lib/postgresql-9.3-1102-jdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/rome-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/rsyntaxtextarea-1.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="lib/salesforce-partner-24.0.jar"/>
+	<classpathentry kind="lib" path="lib/sapdbc-7.4.4.jar"/>
+	<classpathentry kind="lib" path="lib/SassyReader-0.5.jar"/>
+	<classpathentry kind="lib" path="lib/saxon-9.1.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/saxon-dom-9.1.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/scannotation-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/secondstring-20060615.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/simple-jndi-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.7.5.jar"/>
+	<classpathentry kind="lib" path="lib/snakeyaml-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/snappy-java-1.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/snmp4j-1.9.3d.jar"/>
+	<classpathentry kind="lib" path="lib/spring-2.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-2.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/sqlite-jdbc-3.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/stax-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/syslog4j-0.9.34.jar"/>
+	<classpathentry kind="lib" path="lib/trilead-ssh2-build213.jar"/>
+	<classpathentry kind="lib" path="lib/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/wsdl4j-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/wsdl4j-qname-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/wstx-asl-3.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/xalan-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/xercesImpl-2.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/xml-apis-2.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/xml-apis-ext-1.3.04.jar"/>
+	<classpathentry kind="lib" path="lib/xmlbeans-2.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/xmlpull-1.1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="lib/xstream-1.4.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
